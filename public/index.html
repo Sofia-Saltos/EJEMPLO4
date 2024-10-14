@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sun Rise Hotel</title>
+        <style>
+            h1 {
+                font-size: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            h2 {
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            input:invalid {
+                background-color: red;
+                border: 4px blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Sun rise hotel</h1>
+        <h2>Reservaiton form</h2>
+        <form action="file:///C:/Users/user/Desktop/SunRiseHotel.html" style="text-align: center;">
+            Last Name: <input type="text" id="lname" required minlength="3" maxlength="35" pattern="[A-Za-z]+" title="Only letters allowed"><br>
+            First Name: <input type="text" id="fname" required minlength="3" maxlength="35" pattern="[A-Za-z]+" title="Only letters allowed"><br> 
+            Password: <input type="password" name="password" required>
+        </form><br>
+
+        <form action="C:\Users\user\Desktop\SunRiseHotel.html" style="text-align: center;">
+            <B><label for="phone">Enter your phone numer in this format (123) 456-7890:</label></B>
+            <input name="tel1" type="tel" required pattern="[0-9]{3}" placeholder="###" size="3">
+            <input type="tel" name="tel2" required pattern="[0-9]{3}" placeholder="###" size="3">
+            <input type="tel" name="tel3" required pattern="[0-9]{4}" placeholder="####" size="4">
+        </form>
+
+        <form action="C:\Users\user\Desktop\SunRiseHotel.html" style="text-align: center;"> 
+        <label for="date"><B>Enter arrival date and time:</B></label><br>
+            <input type="date" name="dob" required><br>
+            <input type="month" id="expiry" required>
+            <input type="time" name="time" required>
+        </form><br>
+        <form action="C:\Users\user\Desktop\SunRiseHotel.html" style="text-align: center;">
+        <label for="files"><B>Upload your Passport or ID:</B></label><br>
+            <input type="file" name="fileupload" multiple required>
+        </form><br>
+
+        <form action="C:\Users\user\Desktop\SunRiseHotel.html" style="text-align: center;">
+        <label for="days"><B>Enter number of days:</B></label>
+            <input type="number" min="0" max="10" step="1" value="0" required>
+        </form><br>
+
+        <form action="C:\Users\user\Desktop\SunRiseHotel.html" style="text-align: center;">
+        <label for="email"><B>EMAIL:</B></label>
+        <input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Only lowercase letters allowed in the email address">
+        </form> <br>
+
+        <form action="C:\Users\user\Desktop\SunRiseHotel.html" style="text-align: center;">
+            <label for="comments"><B>Leave a comment here:</B></label><br>
+            <textarea name="comments" id="comments" rows="7" cols="40">Enter text here</textarea>
+        </form>
+
+        <fieldset style="text-align: center;">
+            <legend><B>Reservation:</B></legend>
+            <div>
+                <input type="radio" id="Suite" name="room" value="suite" checked required>
+                <label for="Suite">Suite</label>
+            </div>
+            <div>
+                <input type="radio" id="dbl" name="room" value="dbl" required>
+                <label for="dbl">Double Room</label>
+            </div>
+            <div>
+                <input type="radio" id="sngl" name="room" value="sngl" required>
+                <label for="sngl">Single Room</label>
+            </div>
+        </fieldset> <br>
+        <form action="file:///C:/Users/user/Desktop/SunRiseHotel.html" style="text-align: center;">
+        <span>Arriving on:</span>
+        <select name="Arrival Day"> 
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+            <option value="7">Sunday</option>
+        </select>
+        </form>
+        <form action="file:///C:/Users/user/Desktop/SunRiseHotel.html" style="text-align: center;">
+        <label for="numdays";>Number of Days:</label>
+        <input type="text" id="numdays" name="name" required>
+        </form>
+        <h2>Services:</h2>
+        <hr>
+        <form action="file:///C:/Users/user/Desktop/SunRiseHotel.html" style="text-align: center;">
+        <div class="services">
+            <label for="Breakfast">Breakfast</label>
+            <input type="checkbox" name="Breakfast" id="Breakfast" required>
+        </div>
+        <div class="services">
+            <label for="parking">Parking</label>
+            <input type="checkbox" id="parking" name="Parking" required> 
+        </div>
+        <div class="services">
+            <label for="laundry">Laundry</label>
+            <input type="checkbox" id="laundry" name="Laundry" required>
+        </div>
+        <br>
+        <hr>
+        <span><input type="submit" value="Submit"></span>
+        <span><input type="reset" name="reset" value="Clear Form"></span>
+        </form>
+    </body>
+</html> 
